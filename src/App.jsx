@@ -1,12 +1,14 @@
 import { Outlet } from "react-router";
 import "./App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
 	return (
 		<>
-			<h1 className="text-3xl font-bold underline">Bismi Allah</h1>
-			<nav>Nav Bar</nav>
-			<main className="min-h-screen max-x-7xl mx-auto">
+			<nav>
+				<Navbar />
+			</nav>
+			<main className="max-x-7xl mx-auto min-h-screen">
 				<Outlet />
 			</main>
 			<footer>Footer</footer>
